@@ -10,8 +10,8 @@ import { PokemonsService } from './pokemons.service';
 })
 export class DetailPokemonComponent implements OnInit {
 
-	pokemons: Pokemon[] = null;
-	pokemon: Pokemon = null;
+	pokemons: Pokemon[] = [];
+	pokemon: Pokemon;
 
 	constructor(
 		private route: ActivatedRoute,
@@ -20,7 +20,8 @@ export class DetailPokemonComponent implements OnInit {
 		private titleService: Title) { }
 
 	ngOnInit(): void {
-		const id = +this.route.snapshot.paramMap.get('id');
+		// @ts-ignore
+    const id = +this.route.snapshot.paramMap.get('id');
 		this.pokemonsService.getPokemon(id)
 			.subscribe(pokemon => {
 				this.pokemon = pokemon;
@@ -29,11 +30,11 @@ export class DetailPokemonComponent implements OnInit {
 	}
 
 	goBack(): void {
-		this.router.navigate(['/pokemon/list']);
+		this.router.navigate(['/list']);
 	}
 
 	goEdit(pokemon: Pokemon): void {
-		const link = ['/pokemon/edit', pokemon.id];
+		const link = ['/edit', pokemon.id];
 		this.router.navigate(link);
 	}
 

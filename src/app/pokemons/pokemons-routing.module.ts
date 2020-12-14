@@ -12,6 +12,7 @@ const pokemonsRoutes: Routes = [
 		path: 'pokemon',
 
 		children: [
+
 			{ path: 'list', component: ListPokemonComponent },
 			{ path: 'add', component: AddPokemonComponent },
 			{ path: 'edit/:id', component: EditPokemonComponent },

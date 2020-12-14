@@ -30,8 +30,7 @@ import {PageNotFoundComponent} from "./page-not-found.component";
     // Retirer l'importation quand un "vrai" serveur est prêt pour recevoir des requêtes.
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
     PokemonsModule,
-    LoginRoutingModule,
-    AppRoutingModule
+    LoginRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

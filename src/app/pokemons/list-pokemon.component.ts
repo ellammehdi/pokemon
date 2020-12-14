@@ -10,7 +10,7 @@ import { PokemonsService } from './pokemons.service';
 })
 export class ListPokemonComponent implements OnInit {
 
-	pokemons: Pokemon[] = null;
+	pokemons: Pokemon[] = [];
 
 	constructor(
 		private router: Router,
@@ -28,7 +28,7 @@ export class ListPokemonComponent implements OnInit {
 	}
 
 	selectPokemon(pokemon: Pokemon): void {
-		const link = ['/pokemon', pokemon.id];
+		const link = ['/', pokemon.id];
 		this.router.navigate(link);
 	}
 

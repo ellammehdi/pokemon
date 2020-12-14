@@ -8,7 +8,8 @@ import { Pokemon } from './pokemon';
 })
 export class AddPokemonComponent implements OnInit {
 
-	pokemon: Pokemon = null;
+	// @ts-ignore
+  pokemon: Pokemon;
 
 	constructor(private titleService: Title) { }
 

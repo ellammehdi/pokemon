@@ -19,8 +19,7 @@ import { AuthService } from '../auth.service';
 @NgModule({
 	imports: [
 		CommonModule,
-		FormsModule,
-		PokemonRoutingModule
+		FormsModule
 	],
 	declarations: [
 		ListPokemonComponent,

@@ -6,7 +6,8 @@ import { tap, delay } from 'rxjs/operators';
 @Injectable()
 export class AuthService {
 	isLoggedIn = false; // L'utilisateur est-il connecté ?
-	redirectUrl: string; // où rediriger l'utilisateur après l'authentification ?
+	// @ts-ignore
+  redirectUrl: string; // où rediriger l'utilisateur après l'authentification ?
 	// Une méthode de connexion
 	login(name: string, password: string): Observable<boolean> {
 		// Faites votre appel à un service d'authentification...

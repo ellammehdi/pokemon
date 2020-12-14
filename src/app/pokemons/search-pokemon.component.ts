@@ -37,7 +37,7 @@ export class PokemonSearchComponent implements OnInit {
 	}
 
 	gotoDetail(pokemon: Pokemon): void {
-		const link = ['/pokemon', pokemon.id];
+		const link = ['/', pokemon.id];
 		this.router.navigate(link);
 	}
 }
