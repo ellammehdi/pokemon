@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "compodoc": "npx compodoc -p tsconfig.json src --watch --serve --port 3003 --theme Readthedocs",
     "e2e": "ng e2e"
   },
   "private": true,

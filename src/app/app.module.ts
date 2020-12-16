@@ -12,6 +12,10 @@ import {InMemoryDataService} from './in-memory-data.service';
 import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
 import {LoginComponent} from "./login.component";
 import {PageNotFoundComponent} from "./page-not-found.component";
+
+/**
+ * AppModule est le module racine (root) de l'application
+ */
 @NgModule({
   declarations: [
     AppComponent,

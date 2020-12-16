@@ -21,6 +21,9 @@ export class ListPokemonComponent implements OnInit {
 		this.getPokemons();
 	}
 
+  /**
+   * Retourne une liste de pokemons à partir du données statiques
+   */
 	getPokemons(): void {
 		this.titleService.setTitle('Liste des pokémons');
 		this.pokemonsService.getPokemons()

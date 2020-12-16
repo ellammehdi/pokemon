@@ -16,6 +16,9 @@ import { PokemonsService } from './pokemons.service';
 import { AuthGuard } from '../auth-guard.service';
 import { AuthService } from '../auth.service';
 
+/**
+ * Gestion des pokemons (C-create, R-read, U-update, D-delete) CRUD
+ */
 @NgModule({
 	imports: [
 		CommonModule,
